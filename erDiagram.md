@@ -43,6 +43,11 @@ erDiagram
         timestamp updated_at
     }
 
+    subcategory_question {
+        bigint subcategory_id
+        bigint question_id
+    }
+
     %% questinの編集、削除はadminのrole
 
     answer_logs {
