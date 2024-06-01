@@ -36,7 +36,6 @@ erDiagram
 
     questions {
         bigint id PK
-        bigint sub_category_id FK
         string problem
         string answer
         bigint answerd_times "回答された回数：このカラムは問題が表示されたときではなく、回答ボタンをクリックされたときに加算される"
@@ -44,6 +43,7 @@ erDiagram
     }
 
     subcategory_question {
+        bigint id PK
         bigint subcategory_id
         bigint question_id
     }
